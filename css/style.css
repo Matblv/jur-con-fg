@@ -1,0 +1,645 @@
+:root {
+    --colorAzul: #0b0421;
+    --colorAzul2: #000000;
+    --colorVerde: #4cfbac;
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorAzul);
+    color: white;
+    height: 14vh;
+    border-bottom: 1px solid var(--colorVerde);
+    box-shadow: 0px 1px 10px var(--colorVerde);
+}
+
+.headerTextos {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    color: white;
+    align-items: center;
+}
+
+.headerTextos a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerTitulo {
+    font-size: 1rem;
+}
+
+.headerSubtitulo {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.headerLista {
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+}
+
+.headerListaItems {
+    padding: 0% .5rem;
+    text-align: center;
+}
+
+.headerListaItems a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    transition: color 0.4s;
+}
+
+.headerListaItems a:hover{
+    color: orange;
+}
+
+.mainBanner, .mainBanner2, .mainBanner3 {
+    background-image: url(../images/imgprincipal2.jpg);
+    background-size: 100vw 35vh;
+    background-position: center;
+    background-position-x: -7rem;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBanner3 {
+    background-position-x: 0rem;
+    height: 20vh;
+}
+
+.mainBanner2 {
+    background-position-x: 0rem;
+}
+
+.mainBanner {
+    height: 60vh;
+    background-size: 100vh;
+}
+
+.mainBannerTitulo {
+    color: rgba(255, 255, 255, 0.503);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+    line-height: 2.6rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.mainBannerTitulo span {
+    color: var(--colorVerde);
+    font-size: 2rem;
+}
+
+.mainBannerRight {
+    width: 100%;
+    text-align: center;
+}
+
+.mainBannerLink {
+    padding: 0.4rem 0.7rem;
+    border-radius: 8px;
+    background-color: var(--colorAzul);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: background-color 0.4s;
+    border: var(--colorVerde) solid 1.5px;
+}
+
+.mainBannerLink:hover {
+    background-color: var(--colorVerde);
+}
+
+.mainBannerLink a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s
+}
+
+.mainBannerLink a:hover {
+    color: var(--colorAzul);
+}
+
+.mainBannerLink {
+    display: none;
+}
+
+.mainBannerHorario {
+    font-size: 0.7rem;
+    color: white;
+}
+
+.mainBannerTxt, .mainBannerTxt2 {
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.3rem;
+    color: white;
+    display: none;
+}
+
+.mainBannerTxt2 {
+    display: flex;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.mainElegirnos {
+    padding-top: 3rem;
+    background-color: var(--colorAzul);
+    color: white;
+}
+
+.mainElegirnosTitulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--colorVerde);
+}
+
+.mainElegirnosDiv {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSection {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.mainSectionTxt {
+    padding: 0.5rem;
+}
+
+.mainEquipo {
+    padding-top: 3rem;
+    background-color: var(--colorAzul);
+    color: white;
+}
+
+.mainEquipoTitulo {
+    color: var(--colorVerde);
+    text-transform: uppercase;
+    text-align: center;
+    border-top: solid 1px;
+    font-weight: bold;
+    padding-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.mainEquipoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainEquipoSection {
+    width: 75%;
+    min-height: 4.5rem;
+    border: solid 2px var(--colorVerde);
+    border-radius: 15px;
+    margin: 1rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.mainEquipoImg {
+    height: 205px;
+    width: 230px;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+}
+
+.mainEquipoSubtitulo {
+    color: var(--colorVerde);
+    font-size: 1.4rem;
+}
+
+.mainEquipoTxt {
+    margin: 0rem 1.4rem;
+    font-size: 0.8rem;
+}
+
+.mainArea {
+    padding-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--colorAzul);
+    color: white;
+}
+
+.mainAreaDiv {
+    margin: 1rem 1.5rem;
+    border: solid 2px var(--colorVerde);
+    border-radius: 15px;
+    width: 75vw;
+    min-height: 5rem;
+}
+
+.mainAreaImg {
+    height: 200px;
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+.mainAreaSubtitulo {
+    color: var(--colorVerde);
+    font-size: 1.4rem;
+}
+
+.mainAreaTxt {
+    color: white;
+    margin: 0.4rem 1.4rem;
+    font-size: 0.8rem;
+}
+
+.naranja {
+    color: orange;
+}
+
+.mainContacto {
+    background-color: var(--colorAzul);
+    color: white;
+    text-align: center;
+}
+
+.mainContactoDiv {
+    padding: 1rem;
+}
+
+.mainContactoTxt {
+    font-size: 1rem;
+}
+
+.mainMapa {
+    background-color: var(--colorAzul);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainMapaIframe {
+    height: 25rem;
+    width: 85%;
+    margin-bottom: 1rem;
+}
+
+.mainMapaTxt {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--colorAzul);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0 .5rem;
+    border-top: solid 1px var(--colorVerde);
+}
+
+.footerSection {
+    text-align: left;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.footerTxt {
+    width: 100%;
+    max-width: 100%;
+}
+
+.footerSection2 {
+    display: none;
+}
+
+section a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footerTxtWpp {
+    text-decoration: none;
+    color: orange;
+
+}
+
+header{
+    background: linear-gradient(to bottom, var(--colorVerde) -30%, var(--colorAzul) 60%);
+}
+
+footer{
+    background: linear-gradient(to bottom, var(--colorAzul), var(--colorAzul2));
+}
+
+.sitioActual {
+    color: orange;
+}
+
+@media screen and (min-width:426px){
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 16vh;
+    }
+
+    .headerTextos {
+        /* padding-left: 4rem; */
+        text-align: center;
+    }
+
+    .headerTitulo {
+        font-size: 1.2rem;
+    }
+
+    .headerSubtitulo {
+        font-size: 1rem;
+    }
+
+    .headerLista {
+        width: 100%;
+    }
+
+    .headerListaItems {
+        padding: 0% .5rem;
+    }    
+
+    .headerLista a {
+        font-size: 0.8rem;
+        /* margin: 0% 0.7rem; */
+    }
+
+    .mainBanner, .mainBanner2, .mainBanner3 {
+        background-size: 100vw 45vh;
+        background-position-y: -20rem;
+        height: 25vh;
+        background-attachment: fixed;
+    }
+
+    
+
+    .mainBanner {
+        height: 40vh;
+        background-size: 100vh;
+        background-position-y: 2rem;
+        background-position-x: 0rem;
+    }
+
+    .mainBannerTitulo {
+        font-size: 1.8rem;
+    }
+
+    .mainBannerTitulo span {
+        font-size: 2.2rem;
+    }
+
+    .mainBannerTxt {
+        font-size: 1rem;
+        padding-right: 0.8rem;
+    }
+
+    .mainBannerLink {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .mainElegirnosTitulo {
+        font-size: 1.8rem;
+    }
+
+    .mainSection {
+        margin: 0rem 2rem;
+    }
+
+    .mainEquipoTitulo {
+        font-size: 1.8rem;
+    }
+
+    .mainEquipoDiv {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .mainEquipoSection {
+        width: 17rem;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainEquipoSubtitulo {
+        font-size: 1.2rem;
+    }
+
+    .mainArea {
+        padding-bottom: 2rem;
+    }
+
+    .mainAreaSection {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mainAreaDiv {
+        width: 17rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .mainAreaTxt {
+        margin: 0%;
+    }
+
+
+    
+}
+
+@media screen and (min-width:768px) {
+    header {
+        height: 12vh;
+        flex-direction: row;
+    }
+
+    .headerTextos {
+        margin-left: 4rem;
+    }
+
+    .headerLista {
+        width: auto;
+        padding: 0% 1rem;
+    }
+
+    .headerListaItems {
+        padding: 0% .75rem;
+    } 
+
+    .headerLista a {
+        font-size: 1.2rem;
+    }
+
+    .mainBanner, .mainBanner3 {
+        background-size: 100vw 100vh;
+        background-position-y: -5rem;
+        background-position-x: 0rem;
+        height: 55vh;
+        flex-direction: row;
+    }
+
+    .mainBanner2 {
+        background-size: 100vw 100vh;
+        background-position-y: -15rem;
+        height: 35vh;
+    }
+
+    .mainBannerRight {
+        display: block;
+        text-align: left;
+        width: 50%;
+        padding-right: 2.3rem;
+    }
+
+    .mainBannerLink {
+        display: flex;
+    }
+
+    .mainBannerTitulo {
+        font-size: 2.2rem;
+        width: 50%;
+        padding-right: 1rem;
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .mainBannerTitulo a {
+        font-size: 2.2rem;
+    }
+
+    .mainBannerHorario {
+        display: none;
+    }
+
+    .mainBannerTxt {
+        font-size: 1.2rem;
+        display: inline;
+    }
+    
+    .mainBannerTxt2 {
+        display: none;
+    }
+
+    .mainElegirnosDiv {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mainSectionTxt {
+        max-width: 22rem;
+    }
+
+    .mainAreaTxt {
+        font-size: 0.9rem;
+    }
+    
+    .mainContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mainContactoDiv {
+        min-width: 21.5rem;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .footerSection {
+        min-width: 24%;
+        /* margin: 0% 2rem; */
+    }
+
+    .footerSection2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-width: 24rem;
+        /* margin: 0% 2rem; */
+    }
+
+    .footerTxt {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .footerTxtWpp {
+        color: white;
+        transition: color 0.4s;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .footerTxtWpp:hover {
+        color: orange;
+    }
+
+    .sitioActual {
+        color: orange;
+    }
+}
