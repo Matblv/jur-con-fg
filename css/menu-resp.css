@@ -1,4 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
+.ham {
+    cursor: pointer;
+    border: none;
+    margin: 0px;
+    padding: 0%;
+    background-color: transparent; 
+
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    transition: .6s;
+    z-index: 10;
+}
+
+.ham.rotate {
+    transform: rotate(90deg);
+}
+
+.ham span {
+    display: block;
+    background-color: white;
+    height: 2.4px;
+    width: 26px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+
+@keyframes muestraMenu {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.headerLista.activado {
+    display: flex;
+    animation: muestraMenu 450ms ease-in-out both;
+}
+
+.br-1, .br-2, .br-3 {
+    transition: .4s;
+}
+
+.br-1.animado {
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado {
+    opacity: 0;
+}
+
+.br-3.animado {
+    transform: rotate(45deg) translate(-10px, -8px);
+}
