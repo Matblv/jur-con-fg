@@ -12,12 +12,15 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--colorAzul);
     color: white;
-    height: 7vh;
+    height: 8vh;
     border-bottom: 1px solid var(--colorVerde);
     box-shadow: 0px 1px 10px var(--colorVerde);
 }
@@ -52,9 +55,9 @@ nav {
 
 .headerLista {
     position: fixed;
-    top: 8px;
+    top: 6px;
     right: 0;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--colorAzul);
     z-index: 8;
     height: 50vh;
     width: 60vw;
@@ -64,23 +67,29 @@ nav {
     padding: 30px;
     display: none;
     opacity: 0;
+    border-radius: 2%;
 }
 
 .headerListaItems {
     padding: 0% .5rem;
     text-align: center;
     margin: 5px;
+    border-bottom: solid 1px var(--colorVerde);
 }
 
 .headerListaItems a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: color 0.4s;
 }
 
 .headerListaItems a:hover{
     color: orange;
+}
+
+main {
+    margin-top: 60px;
 }
 
 .mainBanner, .mainBanner2, .mainBanner3 {
