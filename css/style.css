@@ -59,7 +59,7 @@ nav {
     right: 0;
     background-color: var(--colorAzul);
     z-index: 8;
-    height: 50vh;
+    height: 55vh;
     width: 60vw;
     flex-direction: column;
     justify-content: space-between;
@@ -114,7 +114,7 @@ main {
 }
 
 .mainBanner {
-    height: 60vh;
+    height: 66vh;
     background-size: 100vh;
 }
 
