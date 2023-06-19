@@ -70,6 +70,19 @@ nav {
     border-radius: 2%;
 }
 
+.headerListaDesk {
+    list-style: none;
+    display: none;
+    width: 60%;
+    position: relative;
+    right: 0;
+}
+
+.headerListaItemsDesk a {
+    color: white;
+    text-decoration: none;
+}
+
 .headerListaItems {
     padding: 0% .5rem;
     text-align: center;
@@ -301,6 +314,7 @@ main {
 .mainAreaSubtitulo {
     color: var(--colorVerde);
     font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .mainAreaTxt {
@@ -406,7 +420,6 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 16vh;
     }
 
     .headerTextos {
@@ -423,7 +436,7 @@ footer{
     }
 
     .headerLista {
-        width: 100%;
+        width: 60vw;
         justify-content: space-around;
     }
 
@@ -432,7 +445,7 @@ footer{
     }    
 
     .headerLista a {
-        font-size: 0.8rem;
+        font-size: 1rem;
         /* margin: 0% 0.7rem; */
     }
 
@@ -525,12 +538,14 @@ footer{
     .mainAreaTxt {
         margin: 0%;
     }
-
-
-    
 }
 
 @media screen and (min-width:768px) {
+    body {
+        max-height: none;
+        min-height: 100vh;
+    }
+
     header {
         height: 12vh;
         flex-direction: row;
@@ -553,6 +568,24 @@ footer{
         font-size: 1.2rem;
     }
 
+    .headerListaDesk {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -250px;
+    }
+
+    .headerListaItemsDesk {
+        margin: 1rem;
+    }
+
+    .headerListaItemsDesk a {
+        text-align: center;
+    }
+
+    .ham {
+        display: none;
+    }
+
     .mainBanner, .mainBanner3 {
         background-size: 100vw 100vh;
         background-position-y: -5rem;
@@ -564,7 +597,7 @@ footer{
     .mainBanner2 {
         background-size: 100vw 100vh;
         background-position-y: -15rem;
-        height: 35vh;
+        height: 45vh;
     }
 
     .mainBannerRight {

@@ -3,6 +3,7 @@ const ham = document.querySelector('.ham');
 const enlaces = document.querySelector('.headerLista');
 const barras = document.querySelectorAll('.ham span');
 
+//dom
 
 
 ham.addEventListener('click', () => {
