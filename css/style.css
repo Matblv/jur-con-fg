@@ -116,8 +116,8 @@ main {
 }
 
 .mainBanner {
-    height: 70vh;
-    background-size: 100vh;
+    height: 75vh;
+    background-size: cover;
 }
 
 .mainBannerTitulo {
