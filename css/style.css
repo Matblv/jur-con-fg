@@ -94,10 +94,12 @@ main {
 
 .mainBanner, .mainBanner2, .mainBanner3 {
     background-image: url(../images/imgprincipal2.jpg);
+    background-color: var(--colorAzul);
+    background-repeat: no-repeat;
     background-size: 100vw 35vh;
     background-position: center;
     background-position-x: -7rem;
-    height: 20rem;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +116,7 @@ main {
 }
 
 .mainBanner {
-    height: 66vh;
+    height: 70vh;
     background-size: 100vh;
 }
 
