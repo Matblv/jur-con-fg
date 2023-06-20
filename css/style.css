@@ -81,6 +81,11 @@ nav {
 .headerListaItemsDesk a {
     color: white;
     text-decoration: none;
+    transition: color 0.4s;
+}
+
+.headerListaItemsDesk a:hover {
+    color: orange;
 }
 
 .headerListaItems {
@@ -579,6 +584,7 @@ footer{
 
     .headerListaItemsDesk a {
         text-align: center;
+        font-size: 1.2rem;
     }
 
     .ham {
